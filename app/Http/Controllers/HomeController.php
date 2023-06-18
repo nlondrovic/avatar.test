@@ -10,7 +10,6 @@ class HomeController extends Controller
     {
         $images = $this->readImagesFromDir("./assets/images/pending/");
         $images = array_slice($images, sizeof($images) - 1);
-//        dd($images);
         $showButtons = true;
 
         return view('home', compact('images', 'showButtons'));

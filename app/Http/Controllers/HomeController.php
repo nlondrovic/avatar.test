@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 class HomeController extends Controller
 {
     // Pending images
@@ -57,8 +56,9 @@ class HomeController extends Controller
 
         if ($handle = opendir($dir)) {
             while (false !== ($entry = readdir($handle))) {
-                if ($entry == "." || $entry == "..")
+                if ($entry == "." || $entry == "..") {
                     continue;
+                }
 
                 $image = [
                     "id" => $counter,

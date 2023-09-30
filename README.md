@@ -21,6 +21,7 @@ cp .env.example .env
 composer update
 php artisan key:generate
 php artisan serve
+Create folders pending, saved and discarded in folder public/assets/images
 ```
 
 ##### The app will be started locally on ```http://localhost:8000```
